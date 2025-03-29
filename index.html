@@ -56,8 +56,8 @@
     <title>Tailwind Css Landing page</title>
   </head>
   <body class="font-righteous">
-    <header>
-      <nav class="container bg-white flex items-center py-4 mt-2 sm:mt-4">
+    <header class="mx-auto">
+      <nav class="container bg-white flex items-center py-4 px-4">
         <div class="py-1">
           <img src="Assests/Herosection/Askmeidentity 2.png" alt="logo" />
         </div>
@@ -73,7 +73,7 @@
           <img src="Assests/Herosection/Group 1.svg" alt="cart logo" />
         </div>
         <div
-          class="flex-col sm:flex sm:flex-row justify-center sm:justify-end mx-8"
+          class="flex-col sm:flex sm:flex-row justify-center items-center sm:justify-end mx-8"
         >
           <button
             type="button"
@@ -95,14 +95,12 @@
     </header>
     <!--herosection-->
     <section
-      class="relative px-20 bg-gradient-to-bl from-hero-blue to-hero-purple opacity-95 mx-auto"
+      class="relative px-10 md:px-20 bg-gradient-to-bl from-hero-blue to-hero-purple opacity-90 mx-auto"
     >
-      <div
-        class="container flex flex-col lg:grid lg:grid-cols-3  z-10"
-      >
+      <div class="container flex flex-col lg:grid lg:grid-cols-3 z-10">
         <!--left side-->
         <div
-          class="flex flex-1 flex-col mt-2 mx-auto sm:mt-8  items-center lg:items-start py-4 "
+          class="flex flex-1 flex-col mt-2 mx-auto sm:mt-8 items-center lg:items-start py-4"
         >
           <p
             class="mt-4 text-start uppercase text-xs mb-4 tracking-widest text-white/80"
@@ -110,14 +108,14 @@
             Successful coaches are visionaries
           </p>
           <h1
-            class="mt-4 text-start text-xl md:text-2xl lg:text-5xl lg:w-96 text-white "
+            class="mt-4 text-start text-xl md:text-2xl lg:text-5xl lg:w-96 text-white leading-16"
           >
             Good <span class="text-span-blue">coaching </span>is good teaching &
             nothing else.
           </h1>
           <div class="flex flex-wrap justify-center gap-6 sm:flex-row">
             <button
-              class="mt-8 border-1 text-xs py-2 px-4 rounded-md text-white "
+              class="mt-8 border-1 text-xs py-2 px-4 rounded-md text-white"
             >
               View Courses
             </button>
@@ -126,12 +124,12 @@
             </button>
           </div>
           <div
-            class="flex flex-col mt-12 sm:flex-row justify-start sm:w-3/4 lg:w-auto gap-2 sm:gap-6  py-2 px-2 bg-white rounded-lg text-xs"
+            class="flex flex-col mx-auto mt-12 sm:flex-row justify-start sm:w-3/4 lg:w-auto gap-2 sm:gap-6 py-2 px-2 bg-white rounded-lg text-xs"
           >
             <input
               type="text"
               placeholder="What do you want to learn today?"
-              class=" text-xs w-3/4 lg:w-56"
+              class="text-xs w-48 md:w-3/4 lg:w-56 text-[#4F547B] text-opacity-100"
             />
             <button
               type="button"
@@ -142,7 +140,7 @@
           </div>
         </div>
         <!--centre-->
-        <div class="flex  flex-1  lg:pl-40 lg:pt-20">
+        <div class="flex flex-1 lg:pl-40 lg:pt-20">
           <div class="w-2/4 py-2 px-2">
             <img
               src="Assests/Herosection/Group 1000014970.svg"
@@ -161,34 +159,36 @@
           </div>
         </div>
         <!--rightside-->
-        <div class="relative flex justify-center sm:justify-end">
-          <div class="z-30 mix-blend-darken w-3/4 h-3/4 lg:w-5/6 lg:h-5/6 bg-w">
+        <div class="relative flex justify-center lg:justify-end lg:mt-20">
+          <div class="z-30 mix-blend-darken w-3/4 h-3/4 lg:w-5/6 lg:h-5/6">
             <img
               src="Assests/Herosection/brunette-woman-hugging-laptop 1.png"
               alt="women"
             />
           </div>
           <div
-            class="absolute z-20 w-6/7 h-6/7 bg-white rounded-[50%] blur-3xl top-6 md:top-12 left-20 "
-          >
-          </div>
+            class="absolute z-20 w-6/7 h-6/7 bg-white rounded-[50%] blur-2xl md:blur-2xl top-6 md:top-18 md:left-24"
+          ></div>
         </div>
         <!--bg-->
-        <div class="hidden sm:block absolute sw-3/6 bottom-0 z-10">
-          <img src="Assests/Herosection/Rectangle 8673.svg" alt="image" />
-        </div>
-        <div class="hidden sm:block absolute sw-3/6 bottom-0">
-          <img src="Assests/Herosection/Rectangle 8675.svg" alt="image" />
-        </div>
-        <div class="hidden sm:block absolute sw-3/6 bottom-0">
-          <img src="Assests/Herosection/Rectangle 8674.svg" alt="image" />
+        <div class="flex relative justify-center items-center left-96">
+          <div
+            class="hidden lg:block absolute border-2 w-32 h-68 rounded-t-full border-white/30 -z-10"
+          ></div>
+          <div
+            class="hidden lg:block absolute border-3 w-40 h-76 rounded-t-full border-white/30 border-dotted -z-10"
+          ></div>
+          <div
+            class="hidden lg:block absolute border-2 w-48 h-84 rounded-t-full border-white/30 -z-10"
+          ></div>
         </div>
       </div>
+
       <!--company logo-->
       <div
-        class="flex items-center justify-around py-4 -mx-20 bg-gradient-to-b from-company-blue to-company-purple z-30"
+        class="flex items-center justify-center py-4 -mx-10 md:-mx-20 bg-gradient-to-b from-company-blue to-company-purple z-30"
       >
-        <div class="flex flex-col lg:flex-row gap-10 py-4 px-2 mt-4">
+        <div class="flex flex-col lg:flex-row gap-12 py-4 px-2 mt-4">
           <img src="Assests/Herosection/Link ⏵ brand6.png.svg" alt="spootify" />
           <img src="Assests/Herosection/Link ⏵ brand1.png.svg" alt="amazon" />
           <img src="Assests/Herosection/Link ⏵ brand6.png.svg" alt="spootify" />
@@ -223,7 +223,7 @@
         </div>
         <!--course cards-->
         <div
-          class="flex flex-1 flex-col lg:grid lg:grid-cols-3 lg:grid-rows-2 gap-6 items-center justify-center mt-12"
+          class="flex flex-1 flex-col lg:grid lg:grid-cols-3 lg:grid-rows-2 gap-6 items-center justify-center mt-12 lg:mt-24"
         >
           <!--card-1-->
           <div
@@ -235,13 +235,13 @@
               class="rounded-t-lg"
             />
             <div
-              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-2"
+              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-6"
             >
               <p class="text-xs text-[#4E596B] font-saira">1,957 Students</p>
               <p class="text-xs font-saira">01h 59m</p>
             </div>
             <h3
-              class="flex flex-1 items-center text-start px-4 mt-2 font-saira font-semibold w-3/4 text-[#324361]"
+              class="flex flex-1 items-center text-start px-4 mt-6 mb-6 font-saira font-semibold w-3/4 text-[#324361]"
             >
               Motion Graphics: Create a Nice Typography Animation
             </h3>
@@ -265,13 +265,13 @@
               class="rounded-t-lg"
             />
             <div
-              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-2"
+              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-6"
             >
               <p class="text-xs text-[#4E596B] font-saira">9,575 Students</p>
               <p class="text-xs font-saira">01h 59m</p>
             </div>
             <h3
-              class="flex flex-1 items-center text-start px-4 mt-2 font-saira font-semibold w-3/4 text-[#324361]"
+              class="flex flex-1 items-center text-start px-4 mt-6 mb-6 font-saira font-semibold w-3/4 text-[#324361]"
             >
               Advance PHP knowledge with JS to make smart web
             </h3>
@@ -295,13 +295,13 @@
               class="rounded-t-lg"
             />
             <div
-              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-2"
+              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-6"
             >
               <p class="text-xs text-[#4E596B] font-saira">2957 Students</p>
               <p class="text-xs font-saira">02h 49m</p>
             </div>
             <h3
-              class="flex flex-1 items-center text-start px-4 mt-2 font-saira font-semibold w-3/4 text-[#324361]"
+              class="flex flex-1 items-center text-start px-4 mt-6 mb-6 font-saira font-semibold w-3/4 text-[#324361]"
             >
               Education Software and PHP and JS System Script
             </h3>
@@ -325,13 +325,13 @@
               class="rounded-t-lg"
             />
             <div
-              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-2"
+              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-6"
             >
               <p class="text-xs text-[#4E596B] font-saira">5,457 Students</p>
               <p class="text-xs font-saira">01h 49m</p>
             </div>
             <h3
-              class="flex flex-1 items-center text-start px-4 mt-2 font-saira font-semibold w-3/4 text-[#324361]"
+              class="flex flex-1 items-center text-start px-4 mt-6 mb-6 font-saira font-semibold w-3/4 text-[#324361]"
             >
               The Complete Financial Analyst Training & Investing
             </h3>
@@ -355,13 +355,13 @@
               class="rounded-t-lg"
             />
             <div
-              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-2"
+              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-6"
             >
               <p class="text-xs text-[#4E596B] font-saira">595 Students</p>
               <p class="text-xs font-saira">01h 49m</p>
             </div>
             <h3
-              class="flex flex-1 items-center text-start px-4 mt-2 font-saira font-semibold w-3/4 text-[#324361]"
+              class="flex flex-1 items-center text-start px-4 mt-6 mb-6 font-saira font-semibold w-3/4 text-[#324361]"
             >
               Marketing 2023: Complete Guide To Instagram Growth
             </h3>
@@ -380,18 +380,18 @@
             class="w-3/4 h-3/4 md:w-5/6 md:h-5/6 lg:w-full lg:h-full mx-auto rounded-lg bg-white shadow-sm"
           >
             <img
-              src="Assests/Coursesection/3d-jigsaw-puzzle-pieces-pink-background-problem-solving-business-concept-3d-render-illustration 1.png"
+              src="Assests/Coursesection/online-banking-icon-money-saving-bank-bundles-money-coins-floating-around-purple-background 1.png"
               alt="map image"
               class="rounded-t-lg"
             />
             <div
-              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-2"
+              class="flex flex-col sm:flex-row items-center justify-between px-4 mt-6"
             >
               <p class="text-xs text-[#4E596B] font-saira">458 Students</p>
               <p class="text-xs font-saira">03h 00m</p>
             </div>
             <h3
-              class="flex flex-1 items-center text-start px-4 mt-2 font-saira font-semibold w-3/4 text-[#324361]"
+              class="flex flex-1 items-center text-start px-4 mt-6 mb-6 font-saira font-semibold w-3/4 text-[#324361]"
             >
               Learn 3D Modelling and Design for Beginners
             </h3>
@@ -406,7 +406,7 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-1 justify-center items-center mt-6 mb-6">
+        <div class="flex flex-1 justify-center items-center mt-12 mb-12">
           <button
             type="button"
             class="py-4 px-2 rounded-md text-white cursor-pointer mt-2 bg-gradient-to-br from-[#083F9B] to-[#7F56D9]"
@@ -418,13 +418,13 @@
     </section>
     <!--Why learn part-->
     <section
-      class="relative px-20 mx-auto bg-gradient-to-tr from-[#739FE8] to-[#4F18CA]"
+      class="relative px-20 mx-auto bg-gradient-to-tr from-[#739FE8]/90 to-[#4F18CA]/90"
     >
       <div
         class="container flex flex-1 flex-col justify-center items-center mb-12"
       >
         <div
-          class="w-3/4 h-3/4 md:w-5/6 md:h-5/6 mt-12 flex flex-col items-center"
+          class="w-3/4 h-3/4 md:w-5/6 md:h-5/6 mt-12 lg:mb-16 flex flex-col items-center"
         >
           <p
             class="text-xl md:text-2xl lg:text-3xl text-white text-center mb-2"
@@ -432,7 +432,7 @@
             Why <span class="text-[#0E38CD]">learn</span> with our courses?
           </p>
           <p
-            class="text-xl font-saira text-center justify-center w-4/6 text-white"
+            class="text-xl font-saira text-center justify-center w-3/5 text-white"
           >
             We are providing the best courses and top classes.And extradinery
             placement training.....
@@ -440,11 +440,11 @@
         </div>
         <!--process part-->
         <div
-          class="flex flex-col md:flex-row gap-3 md:gap-4 lg:gap-12 justify-evenly mb-12"
+          class="flex flex-col md:flex-row gap-3 md:gap-4 lg:gap-12 justify-evenly mb-24"
         >
           <!--learn-->
           <div
-            class="flex flex-col items-center py-2 mt-12 lg:border-r-2 lg:border-white/50 lg:border-dotted"
+            class="flex flex-col items-center py-2 mt-12 lg:border-r-3 lg:border-white/50 lg:border-dotted"
           >
             <div
               class="flex flex-col w-3/4 h-3/4 items-center md:w-4/6 md:h-4/6 text-white px-4"
@@ -462,7 +462,7 @@
           </div>
           <!--graduate-->
           <div
-            class="flex flex-col items-center py-2 mt-12 lg:border-r-2 lg:border-r-white/50 lg:border-dotted"
+            class="flex flex-col items-center py-2 mt-12 lg:border-r-3 lg:border-r-white/50 lg:border-dotted"
           >
             <div
               class="flex flex-col w-3/4 h-3/4 md:w-4/6 md:h-4/6 items-center text-white px-4"
@@ -500,13 +500,25 @@
         </div>
         <!--bgblur color-->
         <div
-          class="absolute w-1/4 h-2/4 rounded-[50%] bg-[#3E96EE] blur-2xl  z-0 -left-32 top-18"
+          class="absolute w-1/4 h-2/4 rounded-[50%] bg-[#3E96EE] blur-3xl z-0 -left-32 top-18"
         ></div>
         <!--bg blocks-->
         <div>
-          <img src="Assests/Coursesection/Rectangle 8680.png" alt="polygon" class=" hidden md:block absolute left-0 w-1/8 top-18">
-          <img src="Assests/Coursesection/Rectangle 8681.png" alt="polygon" class="hidden md:block absolute left-0 w-1/6 top-9 lg:top-8">
-          <img src="Assests/Coursesection/Rectangle 8682.png" alt="polygon" class="hidden md:block absolute left-0 w-1/7 top-14 lg:top-13">
+          <img
+            src="Assests/Coursesection/Rectangle 8680.png"
+            alt="polygon"
+            class="hidden md:block absolute left-0 w-1/8 top-18"
+          />
+          <img
+            src="Assests/Coursesection/Rectangle 8681.png"
+            alt="polygon"
+            class="hidden md:block absolute left-0 w-1/6 top-9 lg:top-6"
+          />
+          <img
+            src="Assests/Coursesection/Rectangle 8682.png"
+            alt="polygon"
+            class="hidden md:block absolute left-0 w-1/7 top-14 lg:top-12"
+          />
         </div>
       </div>
     </section>
@@ -528,7 +540,7 @@
         </div>
         <!--cards-->
         <div
-          class="flex flex-col md:grid md:grid-cols-3 md:grid-rows-2 lg:grid-cols-6 lg:grid-rows-1 justify-center items-center gap-8 mt-12 lg:mt-24 mb-12 lg:mb-24 py-8 px-8"
+          class="flex flex-col md:grid md:grid-cols-3 md:grid-rows-2 lg:grid-cols-6 lg:grid-rows-1 justify-center items-center gap-4 mt-12 lg:mt-24 mb-12 lg:mb-24 py-8 px-8"
         >
           <!--card-1-->
           <div
@@ -636,15 +648,15 @@
       </div>
     </section>
     <!--subscribe-section-->
-    <section class="relative py-20 px-20 bg-white">
+    <section class="py-20 px-20 bg-white">
       <div
         class="container flex flex-col flex-1 w-3/4 h-3/4 lg:w-5/6 lg:h-5/6 mx-auto items-center"
       >
         <div
-          class="relative flex flex-1 flex-col items-center justify-center bg-gradient-to-bl from-[#E441FF] from-0% via-[#1901F8]/55 via-64% to-[#00B3FF]/10 to-100% rounded-lg"
+          class="relative flex flex-1 flex-col lg:w-5/6 items-center justify-center bg-gradient-to-bl from-[#E441FF] from-0% via-[#1901F8]/55 via-54% to-[#00B3FF]/20 to-100% rounded-lg"
         >
           <h1
-            class="text-xl md:text-2xl lg:text-3xl text-white mt-12 mb-2 text-center w-3/5"
+            class="text-xl md:text-2xl lg:text-3xl text-white mt-12 mb-2 text-center w-2/4 z-30"
           >
             Subscribe For Get Update Every New Courses
           </h1>
@@ -657,30 +669,30 @@
             <input type="text" placeholder="enter your email" />
             <button
               type="button"
-              class="-mt-2 -mb-2 -mx-2 py-2 px-2 bg-[#0E38CD] text-xs"
+              class="-mt-2 -mb-2 -mx-2 py-2 px-2 rounded-r-md bg-[#0E38CD] text-xs"
             >
               Subscribe
             </button>
-            <div class="hidden md:block absolute top-12 left-15 w-5/6">
+            <div class="hidden lg:block absolute top-12 left-15 w-5/6">
               <img src="Assests/subscribesection/images.png" alt="profiles" />
             </div>
           </div>
+          <img
+            src="Assests/subscribesection/Polygon 9.svg"
+            alt="polygon"
+            class="hidden lg:block absolute top-3 left-86 w-12"
+          />
+          <img
+            src="Assests/subscribesection/Polygon 9.svg"
+            alt="polygon"
+            class="hidden lg:block absolute -bottom-4 -left-8 w-12"
+          />
+          <img
+            src="Assests/subscribesection/Polygon 7.svg"
+            alt="polygon"
+            class="hidden lg:block absolute -bottom-30 -right-16 w-12"
+          />
         </div>
-        <img
-          src="Assests/subscribesection/Polygon 9.svg"
-          alt="polygon"
-          class="hidden md:block absolute top-25 w-12"
-        />
-        <img
-          src="Assests/subscribesection/Polygon 9.svg"
-          alt="polygon"
-          class="hidden md:block absolute top-80 left-24 w-12"
-        />
-        <img
-          src="Assests/subscribesection/Polygon 7.svg"
-          alt="polygon"
-          class="hidden md:block absolute bottom-0 right-36 w-12"
-        />
       </div>
     </section>
     <!--video section-->
@@ -699,7 +711,7 @@
         <img
           src="Assests/subscribesection/banner_right.png.svg"
           alt="banner"
-          class="hidden md:block absolute -right-18 bottom-1 w-1/4"
+          class="hidden md:block absolute -right-14 bottom-1 w-1/4"
         />
       </div>
     </section>
@@ -711,7 +723,7 @@
         <img
           src="Assests/testimonial/Ellipse 1217.svg"
           alt="ellipse"
-          class="absolute left-24 top-25"
+          class="hidden md:block absolute left-24 top-25"
         />
         <h1
           class="text-xl md:text-2xl lg:text-3xl text-center mt-2 py-2 text-[#0E38CD]"
@@ -722,7 +734,7 @@
           What our student say about us
         </p>
         <div
-          class="absolute w-2/4 h-3/4 rounded-[50%] bg-[#8057D8]/50 blur-2xl opacity-25 z-0 -left-48 top-48"
+          class="absolute w-2/4 h-3/4 rounded-[50%] bg-[#8057D8]/50 blur-3xl opacity-25 z-0 -left-52 top-48"
         ></div>
         <!--testimonial cards-->
         <div
@@ -735,7 +747,7 @@
             <img
               src="Assests/testimonial/th (1) 6.png"
               alt="profile"
-              class="w-2/12 -mt-16 mb-2"
+              class="w-2/12 -mt-14 mb-2"
             />
             <div class="py-2 px-2 mx-auto">
               <p class="text-xs py-2 text-[#7E7EAA] text-start mb-2 leading-6">
@@ -752,12 +764,12 @@
           </div>
           <!--testimonial card 2-->
           <div
-            class="flex flex-col w-6/7 lg:-mt-24 py-4 items-center bg-white shadow-lg z-20"
+            class="flex flex-col w-6/7 lg:w-6/7 lg:-mt-24 py-4 lg:px-4 items-center bg-white shadow-lg z-20"
           >
             <img
               src="Assests/testimonial/th (1) 6.png"
               alt="profile"
-              class="w-2/12 -mt-16 mb-2"
+              class="w-2/12 -mt-14 mb-2"
             />
             <div class="py-2 px-2 mx-auto">
               <p
@@ -781,7 +793,7 @@
             <img
               src="Assests/testimonial/th (1) 6.png"
               alt="profile"
-              class="w-2/12 -mt-16 mb-2"
+              class="w-2/12 -mt-14 mb-2"
             />
             <div class="py-2 px-2 mx-auto">
               <p
@@ -801,7 +813,7 @@
         </div>
         <!--arrow-->
         <div
-          class="flex flex-row items-center justify-center lg:items-end lg:justify-end mt-12 lg:-mr-10 lg:-mb-12"
+          class="flex flex-row items-center justify-center lg:items-end lg:justify-end mt-12 lg:-mr-20 lg:-mb-12"
         >
           <img src="Assests/testimonial/Back Arrow (1).svg" alt="arrow" />
           <img src="Assests/testimonial/Back Arrow.svg" alt="arrow" />
@@ -809,19 +821,21 @@
       </div>
     </section>
     <!--footer section-->
-    <footer class="pt-20 px-20 bg-gradient-to-bl from-[#477AE3] to-[#931BBD]">
+    <footer class="pt-20 px-20 bg-gradient-to-l from-[#477AE3] to-[#931BBD]">
       <div class="container flex flex-col pt-8 pb-0">
         <!--links-->
         <div class="flex flex-col lg:grid lg:grid-cols-6 gap-24">
           <!--logo-->
-          <div class="flex flex-col lg:col-span-2 mr-10 items-center">
+          <div
+            class="flex flex-col lg:col-span-2 mr-10 items-center lg:items-start"
+          >
             <h2 class="flex text-2xl text-[#0A033C] mb-8 px-8">Connect</h2>
             <img
               src="Assests/Herosection/Askmeidentity 2.png"
               alt="logo"
               class="mix-blend-color-burn mb-4"
             />
-            <p class="text-xs lg:w-3/4 opacity-50">
+            <p class="text-xs lg:w-4/5 opacity-50">
               Sri Jagannath Nivas,8-1-164/345/A/1, Pragati Colony,
               Mailardevpally, Nawab Saheb Kunta, Hyd, 500005
             </p>
